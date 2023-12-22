@@ -18,7 +18,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
      assert_select 'ul li', 'Email is invalid'
      assert_select 'ul li', 'Password confirmation doesn\'t match Password'
      assert_select 'ul li', 'Password is too short (minimum is 6 characters)'
-   end
+    end
   end
 
   test "valid signup information" do
